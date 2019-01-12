@@ -1,0 +1,71 @@
+{
+  "data": [
+    {
+      "year": 2015,
+      "data": [
+        { "month": 1, "count": 14 },
+        { "month": 2, "count": 1 },
+        { "month": 3, "count": 1 },
+        { "month": 4, "count": 2 },
+        { "month": 6, "count": 3 },
+        { "month": 7, "count": 15 },
+        { "month": 8, "count": 15 },
+        { "month": 9, "count": 36 },
+        { "month": 10, "count": 57 },
+        { "month": 11, "count": 110 },
+        { "month": 12, "count": 150 }
+      ]
+    },
+    {
+      "year": 2016,
+      "data": [
+        { "month": 1, "count": 219 },
+        { "month": 2, "count": 218 },
+        { "month": 3, "count": 198 },
+        { "month": 4, "count": 129 },
+        { "month": 5, "count": 114 },
+        { "month": 6, "count": 116 },
+        { "month": 7, "count": 152 },
+        { "month": 8, "count": 160 },
+        { "month": 9, "count": 175 },
+        { "month": 10, "count": 331 },
+        { "month": 11, "count": 97 },
+        { "month": 12, "count": 48 }
+      ]
+    },
+    {
+      "year": 2017,
+      "data": [
+        { "month": 1, "count": 61 },
+        { "month": 2, "count": 43 },
+        { "month": 3, "count": 118 },
+        { "month": 4, "count": 142 },
+        { "month": 5, "count": 143 },
+        { "month": 6, "count": 189 },
+        { "month": 7, "count": 219 },
+        { "month": 8, "count": 242 },
+        { "month": 9, "count": 282 },
+        { "month": 10, "count": 257 },
+        { "month": 11, "count": 216 },
+        { "month": 12, "count": 182 }
+      ]
+    },
+    {
+      "year": 2018,
+      "data": [
+        { "month": 1, "count": 143 },
+        { "month": 2, "count": 157 },
+        { "month": 3, "count": 168 },
+        { "month": 4, "count": 248 },
+        { "month": 5, "count": 253 },
+        { "month": 6, "count": 380 },
+        { "month": 7, "count": 331 },
+        { "month": 8, "count": 374 },
+        { "month": 9, "count": 382 },
+        { "month": 10, "count": 376 },
+        { "month": 11, "count": 336 },
+        { "month": 12, "count": 292 }
+      ]
+    }
+  ]
+}

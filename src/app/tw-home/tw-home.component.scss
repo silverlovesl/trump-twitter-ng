@@ -1,0 +1,39 @@
+.card-tag {
+  height: 130px;
+  padding-left: 10px;
+  position: relative;
+  background: linear-gradient(240deg, #00aadf 0%, #0071bc 100%);
+  color: white;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 4px;
+    color: white;
+  }
+
+  p {
+    margin: 2px;
+  }
+
+  .annual-twitter-count {
+    font-size: 2.4rem;
+
+    &-avg {
+      font-size: 0.8rem;
+    }
+  }
+
+  overflow: hidden;
+
+  i {
+    color: #81c8e9;
+    position: absolute;
+    font-size: 4rem;
+    right: 5px;
+    bottom: -5px;
+  }
+}

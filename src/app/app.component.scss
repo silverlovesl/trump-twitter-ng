@@ -1,0 +1,26 @@
+#app {
+  height: 100vh;
+}
+
+#components-layout-demo-custom-trigger {
+  height: 100%;
+
+  .trigger {
+    font-size: 18px;
+    line-height: 64px;
+    padding: 0 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+    height: 100%;
+  }
+
+  .logo {
+    margin: 6px 0px;
+    text-align: center;
+    width: 100%;
+
+    >img {
+      height: 48px;
+    }
+  }
+}

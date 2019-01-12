@@ -1,0 +1,57 @@
+<article>
+  <div nz-row [nzGutter]="16" class="row-spacing">
+    <div nz-col [nzSpan]="6">
+      <nz-card [nzLoading]="isLoading" [nzHoverable] class="card-tag" [nzBodyStyle]="cardBody">
+        <h4>2018年</h4>
+        <p *ngIf="annualTwitterTotal" class="annual-twitter-count">
+          <span countUp [startVal]="0" [endVal]="annualTwitterTotal" [duration]="2">0</span>件
+        </p>
+        <p>
+          一日あたり {{annualTwitterAvg}} 件
+        </p>
+        <i nz-icon type="twitter"></i>
+      </nz-card>
+    </div>
+  </div>
+  <div nz-row [nzGutter]="16" class="row-spacing">
+    <div nz-col [nzSpan]="8">
+      <nz-card [nzHoverable] [bodyStyle]="{'height':'115px'}" [nzCover]="coverTemplate">
+        <ng-template #coverTemplate>
+          <img alt="trump" src="assets/image/trump-avator.png" slot="cover" style="height:300px;border-bottom:1px solid silver;">
+        </ng-template>
+        <nz-card-meta nzTitle="Donald J. Trump" [nzDescription]="descriptionTemplate"></nz-card-meta>
+        <ng-template #descriptionTemplate>
+          <div style="height:45px;">
+            <a target="_blank" href="https://twitter.com/realDonaldTrump">
+              The 45th and current President of the United States.
+            </a>
+          </div>
+        </ng-template>
+      </nz-card>
+
+    </div>
+    <div nz-col [nzSpan]="8">
+      <nz-card nzTitle="年度別Twitter数" [nzLoading]="isLoading" [nzHoverable] [nzBodyStyle]="cardBody">
+        <div echarts [options]="annualTwitteStatChartOptions"></div>
+      </nz-card>
+    </div>
+    <div nz-col [nzSpan]="8">
+      <nz-card nzTitle="トランプが何を言った" [nzLoading]="isLoading" [nzHoverable] [nzBodyStyle]="cardBody">
+        <div echarts [options]="wordCloudChartOptions"></div>
+      </nz-card>
+    </div>
+  </div>
+
+  <div nz-row [nzGutter]="16">
+    <div nz-col [nzSpan]="12">
+      <nz-card nzTitle="月度別Twitter数" [nzLoading]="isLoading" [nzHoverable] [nzBodyStyle]="cardBody">
+        <div echarts [options]="monthlyTwitterStatChartOptions"></div>
+      </nz-card>
+    </div>
+    <div nz-col [nzSpan]="12">
+      <nz-card nzTitle="時間別Twitter数" [nzLoading]="isLoading" [nzHoverable] [nzBodyStyle]="cardBody">
+        <div echarts [options]="hourlyTwitterStatChartOptions"></div>
+      </nz-card>
+    </div>
+  </div>
+</article>
