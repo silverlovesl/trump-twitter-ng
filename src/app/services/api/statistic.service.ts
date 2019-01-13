@@ -50,8 +50,6 @@ export class StatisticService {
 
   getEmotion(): Observable<Emotion> {
     const mock = require('@/assets/mock-data/emotion.json');
-    return Observable.create(mock).then((d: any) => {
-      return new Emotion().deserialize(d);
-    });
+    return of(new Emotion().deserialize(mock));
   }
 }

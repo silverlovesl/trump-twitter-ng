@@ -4,18 +4,18 @@
       <div class="logo">
         <img src="assets/image/logo_small.png">
       </div>
-      <ul nz-menu nzTheme="dark" nzMode="inline" [nzInlineCollapsed]="collapsed">
-        <li nz-menu-item>
+      <ul nz-menu nzTheme="dark" nzMode="inline" [nzInlineCollapsed]="collapsed" (nzClick)="handleMenuClick($event)">
+        <li nz-menu-item [attr.key]="'home'">
           <span title>
             <i nz-icon type="bar-chart"></i><span>Twitter every day</span>
           </span>
         </li>
-        <li nz-menu-item>
+        <li nz-menu-item [attr.key]="'emotion'">
           <span title>
             <i nz-icon type="frown"></i><span>Emotion</span>
           </span>
         </li>
-        <li nz-menu-item>
+        <li nz-menu-item [attr.key]="'XXXX'">
           <span title>
             <i nz-icon type="pie-chart"></i><span>XXXX</span>
           </span>
